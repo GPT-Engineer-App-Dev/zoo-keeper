@@ -2,12 +2,8 @@ import {
   Bell,
   CircleUser,
   Home,
-  LineChart,
   Menu,
-  Package,
   Package2,
-  Search,
-  ShoppingCart,
   Users,
 } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
@@ -39,7 +35,7 @@ function SharedLayout() {
           <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
             <a href="/" className="flex items-center gap-2 font-semibold">
               <Package2 className="h-6 w-6" />
-              <span className="">Acme Inc</span>
+              <span className="">Zoo Management</span>
             </a>
           </div>
           <div className="flex-1">
@@ -50,6 +46,20 @@ function SharedLayout() {
               >
                 <Home className="h-4 w-4" />
                 Home
+              </a>
+              <a
+                href="#"
+                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-foreground"
+              >
+                <Users className="h-4 w-4" />
+                Animals
+              </a>
+              <a
+                href="#"
+                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-foreground"
+              >
+                <Bell className="h-4 w-4" />
+                Notifications
               </a>
             </nav>
           </div>
@@ -75,7 +85,7 @@ function SharedLayout() {
                   className="flex items-center gap-2 text-lg font-semibold"
                 >
                   <Package2 className="h-6 w-6" />
-                  <span className="sr-only">Acme Inc</span>
+                  <span className="sr-only">Zoo Management</span>
                 </a>
                 <a
                   href="#"
@@ -83,6 +93,20 @@ function SharedLayout() {
                 >
                   <Home className="h-5 w-5" />
                   Home
+                </a>
+                <a
+                  href="#"
+                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+                >
+                  <Users className="h-5 w-5" />
+                  Animals
+                </a>
+                <a
+                  href="#"
+                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
+                >
+                  <Bell className="h-5 w-5" />
+                  Notifications
                 </a>
               </nav>
             </SheetContent>
